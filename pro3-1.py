@@ -125,3 +125,17 @@ def askAnswer(previousFaultState, answer):
 
    examAnswer = examRequestWithItem(answerRequest)
    examinationAction(examAnswer, previousFaultState, answer)
+
+## def examRequestWithItem
+
+def examRequestWithItem(request):
+   global print1
+   clear_console()
+   if request == chooseItem("answer"): 
+      print1 += "\n:" + "\033[92m {}\033[00m" .format(print2)
+      return "Correct"
+   else:
+      print(print1 + "\n:" + "\033[91m {}\033[00m" .format(print2))
+      print(">", chooseItem("answer"))
+      step = input()
+      return "Incorrect"
