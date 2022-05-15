@@ -54,4 +54,18 @@ def copyAuxiliarDeckinCSV(auxiliarDeck, csv):
    with open("{}.csv".format(csv), "w", newline="") as file:
       writer = csv.writer(file, delimiter=",")
       writer.writerows(auxiliarDeck)
-      
+
+## def starting importExport functions
+
+def importStartingCSVinStartingDeck(startingCSV, startingDeck):
+	resetDeck(auxiliarDeck)
+   copyStartingCSVinAuxiliarDeck(startingCSV, auxiliarDeck)
+   copyAuxiliarDeckinStartingDeck(auxiliarDeck, startingDeck)
+   resetDeck(auxiliarDeck)
+	
+def exportStartingDeckinParkCSV(startingDeck, parkCSV):
+   resetDeck(auxiliarDeck)
+   copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck)
+   copyAuxiliarDeckinParkCSV(auxiliarDeck, parkCSV)
+   resetDeck(auxiliarDeck)
+
