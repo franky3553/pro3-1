@@ -26,16 +26,16 @@ winDeck = []
 
 ## def non starting importExport functions
 
-def importCSVinDeck(csv, deck):
+def importCSVinDeck(csvFile, deck):
    resetDeck(auxiliarDeck)
-   copyCSVinAuxiliarDeck(csv, auxiliarDeck)
+   copyCSVinAuxiliarDeck(csvFile)
    copyAuxiliarDeckinDeck(auxiliarDeck, deck)
    resetDeck(auxiliarDeck)
 	
-def exportDeckinCSV(csv, deck):
+def exportDeckinCSV(deck, csvFile):
    resetDeck(auxiliarDeck)
-   copyDeckinAuxiliarDeck(deck, auxiliarDeck)
-   copyAuxiliarDeckinCSV(auxiliarDeck, csv)
+   copyDeckinAuxiliarDeck(deck)
+   copyAuxiliarDeckinCSV(auxiliarDeck, csvFile)
    resetDeck(auxiliarDeck)
 
 ## def functions inside non starting importExport functions
@@ -45,8 +45,8 @@ def resetDeck(deck):
       del deck[0]
 # capsule is a section of a deck composed of status line and statmentAnswer line
 
-def copyCSVinAuxiliarDeck(csv, auxiliarDeck):
-   with open("{}.csv".format(csv)) as file:
+def copyCSVinAuxiliarDeck(csvFile):
+   with open("{}.csv".format(csvFile)) as file:
       reader = csv.reader(file, delimiter=",")
       for row in reader:
             auxiliarDeck.append(row)
@@ -54,7 +54,7 @@ def copyCSVinAuxiliarDeck(csv, auxiliarDeck):
 def copyAuxiliarDeckinDeck(auxiliarDeck, deck):
    CSVline = 0
    linesPerCapsule = 2
-   totalLines = len(csv)
+   totalLines = len(auxiliarDeck)
    totalCapsules = int(totalLines / linesPerCapsule)
    for capsule in range(totalCapsules):
       deck.append([])
@@ -62,14 +62,14 @@ def copyAuxiliarDeckinDeck(auxiliarDeck, deck):
          deck[capsule].append(auxiliarDeck[CSVline])         
          CSVline += 1
 
-def copyDeckinAuxiliarDeck(deck, auxiliarDeck):
+def copyDeckinAuxiliarDeck(deck):
    linesPerCapsule = 2
    for capsule in range(len(deck)):
       for line in range(linesPerCapsule):
          auxiliarDeck.append(deck[capsule][line])
 
-def copyAuxiliarDeckinCSV(auxiliarDeck, csv):
-   with open("{}.csv".format(csv), "w", newline="") as file:
+def copyAuxiliarDeckinCSV(auxiliarDeck, csvFile):
+   with open("{}.csv".format(csvFile), "w", newline="") as file:
       writer = csv.writer(file, delimiter=",")
       writer.writerows(auxiliarDeck)
 
@@ -77,19 +77,19 @@ def copyAuxiliarDeckinCSV(auxiliarDeck, csv):
 
 def importStartingCSVinStartingDeck(startingCSV, startingDeck):
    resetDeck(auxiliarDeck)
-   copyStartingCSVinAuxiliarDeck(startingCSV, auxiliarDeck)
+   copyStartingCSVinAuxiliarDeck(startingCSV)
    copyAuxiliarDeckinStartingDeck(auxiliarDeck, startingDeck)
    resetDeck(auxiliarDeck)
 	
-def exportStartingDeckinCSV(startingDeck, csv):
+def exportStartingDeckinCSV(startingDeck, csvFile):
    resetDeck(auxiliarDeck)
-   copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck)
-   copyAuxiliarDeckinCSV(auxiliarDeck, csv)
+   copyStartingDeckinAuxiliarDeck(startingDeck)
+   copyAuxiliarDeckinCSV(auxiliarDeck, csvFile)
    resetDeck(auxiliarDeck)
 
 ## def functions inside starting importExport functions
 
-def copyStartingCSVinAuxiliarDeck(startingCSV, auxiliarDeck):
+def copyStartingCSVinAuxiliarDeck(startingCSV):
    with open("{}.csv".format(startingCSV)) as file:
       reader = csv.reader(file, delimiter=",")
       for row in reader:
@@ -101,7 +101,7 @@ def copyAuxiliarDeckinStartingDeck(auxiliarDeck, startingDeck):
       startingDeck.append(auxiliarDeck[element])
       element += 1
 
-def copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck):
+def copyStartingDeckinAuxiliarDeck(startingDeck):
    totalLines = len(startingDeck)
    for line in range(totalLines):
       auxiliarDeck.append([0, 0, 0])
