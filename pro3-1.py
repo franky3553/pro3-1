@@ -3,7 +3,7 @@ import csv
 ## def clearConsole
 
 def clear_console():
-    os.system('cls')
+   os.system('cls')
 
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))
@@ -280,6 +280,14 @@ def extractCapsulefromDeck(deck, position):
    capsuleSave = deck[position]
    del deck[position]
    return capsuleSave
+
+## def resetWinCapsule
+
+def resetWinCapsule(): 
+   winDeck[0][0][0] = 0
+   winDeck[0][0][1] = 10
+   winDeck[0][0][2] = 3
+
 
 
 importCSVinDeck("park", parkDeck)
