@@ -118,8 +118,8 @@ def askCapsule():
 
 def askStatement(previousFaultState):
    global print1
-   print1 = chooseItem("statement")
-   print(chooseItem("statement"))
+   print1 = item["statement"]
+   print(item["statement"])
    askAnswer(previousFaultState)
 
 ## def askAnswer
@@ -141,12 +141,12 @@ def askAnswer(previousFaultState):
 def examRequestWithItem(request):
    global print1
    clear_console()
-   if request == chooseItem("answer"): 
+   if request == item["answer"]: 
       print1 += "\n:" + "\033[92m {}\033[00m" .format(print2)
       return "Correct"
    else:
       print(print1 + "\n:" + "\033[91m {}\033[00m" .format(print2))
-      print(">", chooseItem("answer"))
+      print(">", item["answer"])
       step = input()
       return "Incorrect"
 
@@ -297,6 +297,14 @@ importCSVinDeck("win", winDeck)
 
 importStartingCSVinStartingDeck("starting", startingDeck)
 exportStartingDeckinCSV(startingDeck, "park")
+
+item = {
+   "fuel": int(raceDeck[0][0][0]),
+   "tank": int(raceDeck[0][0][1]),
+   "statement": raceDeck[0][1][0],
+   "answer": raceDeck[0][1][1],
+}
+
 
 ## MAIN LOOP
 
