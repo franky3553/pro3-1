@@ -270,6 +270,12 @@ def resetWinCapsule():
    winDeck[0][0][1] = 10
    winDeck[0][0][2] = 3
 
+## def preparation
+
+def preparation():
+   extractFromDeckInsertToDeck(parkDeck, raceDeck)
+# to extract first capsule from park and insert in race to initiate correctly
+
 ## importExport CSV and decks
 
 importCSVinDeck("park", parkDeck)
@@ -278,6 +284,10 @@ importCSVinDeck("win", winDeck)
 
 importStartingCSVinStartingDeck("starting", startingDeck)
 exportStartingDeckinCSV(startingDeck, "park")
+
+preparation()
+exportDeckinCSV(parkDeck, "park")
+exportDeckinCSV(raceDeck, "race")
 
 ## MAIN LOOP
 
