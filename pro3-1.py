@@ -149,6 +149,7 @@ def examinationAction(examAnswer, previousFaultState):
       successfulAnswerAction(previousFaultState)
 
 ## def chooseItem
+
 def chooseItem(item):
    if item == "capsule":
       capsule = raceDeck[0]
@@ -165,4 +166,16 @@ def chooseItem(item):
    elif item == "answer":
       answer = raceDeck[0][1][1]
       return answer
-      
+
+## def failedAnswerAction
+
+def failedAnswerAction(previousFaultState):
+   if previousFaultState == "noPriorFailure":
+      raceDeck[0][0][1] = decreaseTank()
+
+      askAnswer("priorFailure")
+
+   elif previousFaultState == "priorFailure":
+      askAnswer("priorFailure")
+
+
