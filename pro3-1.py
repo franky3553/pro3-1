@@ -179,3 +179,21 @@ def failedAnswerAction(previousFaultState):
       askAnswer("priorFailure")
 
 
+## def successfulAnswerAction
+
+def successfulAnswerAction(previousFaultState):
+
+   if previousFaultState == "noPriorFailure": 
+      raceDeck[0][0][1] = increaseTank() 
+
+   print(print1)
+   
+   examCapsuleMovement()
+
+   adjustFuel()
+
+   sortDeck(mazoRace2)
+   
+   examCapsuleMovement()
+
+
