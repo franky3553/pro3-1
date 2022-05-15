@@ -280,3 +280,19 @@ importCSVinDeck("win", winDeck)
 importStartingCSVinStartingDeck("starting", startingDeck)
 exportStartingDeckinCSV(startingDeck, "park")
 
+## MAIN LOOP
+
+while True:
+
+   print1 = ""
+   print2 = ""
+
+   askCapsule()
+
+   exportDeckinCSV(parkDeck, "park")
+   exportDeckinCSV(raceDeck, "race")
+   exportDeckinCSV(winDeck, "win")
+
+   
+   prYellow("CONTIIIINUE>>>>>>>>")
+   step = input()
