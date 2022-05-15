@@ -214,7 +214,19 @@ def increaseTank():
 ## def adjustFuel
 
 def adjustFuel():     
-   raceDeck[0][0][0] = Refuel()
+   raceDeck[0][0][0] = refuel()
 
    spendFuel()
+
+## def functions inside adjustFuel function
+
+def refuel():
+   return str(raceDeck[0][0][1]) 
+
+def spendFuel():
+   for row in raceDeck:
+      fuelSelection = int(row[0][0])
+      if fuelSelection > 0:
+         fuelSelection -= 1
+         row[0][0] = str(fuelSelection)
 
