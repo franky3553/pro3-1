@@ -204,3 +204,11 @@ def decreaseTank():
    else:
       tankOperation = tankSelection - 2
    return str(tankOperation)
+
+## increaseTank 
+
+def increaseTank():
+   tankOperation = int(raceDeck[0][0][1]) + 2
+   return str(tankOperation)
+
+   
