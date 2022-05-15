@@ -205,10 +205,16 @@ def decreaseTank():
       tankOperation = tankSelection - 2
    return str(tankOperation)
 
-## increaseTank 
+## def increaseTank 
 
 def increaseTank():
    tankOperation = int(raceDeck[0][0][1]) + 2
    return str(tankOperation)
 
-   
+## def adjustFuel
+
+def adjustFuel():     
+   raceDeck[0][0][0] = Refuel()
+
+   spendFuel()
+
