@@ -1,4 +1,5 @@
 import csv
+import os
 
 ## def clearConsole
 
@@ -200,7 +201,7 @@ def successfulAnswerAction(previousFaultState):
 
    adjustFuel()
 
-   sortDeck(mazoRace2)
+   sortDeck(raceDeck)
    
    examCapsuleMovement()
 
