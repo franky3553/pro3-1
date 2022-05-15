@@ -1,5 +1,7 @@
 import csv
 
+global print1
+
 auxiliarDeck = []
 startingDeck = []
 parkDeck = []
@@ -95,3 +97,11 @@ def copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck):
 def askCapsule():
    previousFaultState = "NoPriorFailure"
    askStatement(previousFaultState)
+
+## def askStatement
+
+def askStatement(previousFaultState):
+   global print1
+   print1 = chooseItem("statement")
+   print(chooseItem("statement"))
+   askAnswer(previousFaultState, chooseItem("answer"))
