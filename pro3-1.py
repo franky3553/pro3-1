@@ -71,7 +71,7 @@ def importStartingCSVinStartingDeck(startingCSV, startingDeck):
    copyAuxiliarDeckinStartingDeck(auxiliarDeck, startingDeck)
    resetDeck(auxiliarDeck)
 	
-def exportStartingDeckinParkCSV(startingDeck, csv):
+def exportStartingDeckinCSV(startingDeck, csv):
    resetDeck(auxiliarDeck)
    copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck)
    copyAuxiliarDeckinCSV(auxiliarDeck, csv)
@@ -270,8 +270,13 @@ def extractFromDeckInsertToDeck(extractionDeck, insertionDeck):
 def extractCapsulefromDeck(deck, position):
    capsuleSave = deck[position]
    del deck[position]
-   return capsulaSave
+   return capsuleSave
 
 
+importCSVinDeck("park", parkDeck)
+importCSVinDeck("race", raceDeck)
+importCSVinDeck("win", winDeck)
 
+importStartingCSVinStartingDeck("starting", startingDeck)
+exportStartingDeckinCSV(startingDeck, "park")
 
