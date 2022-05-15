@@ -158,25 +158,6 @@ def examinationAction(examAnswer, previousFaultState):
    elif examAnswer == "Correct":
       successfulAnswerAction(previousFaultState)
 
-## def chooseItem
-
-def chooseItem(item):
-   if item == "capsule":
-      capsule = raceDeck[0]
-      return capsule
-   elif item == "fuel":
-      fuel = int(raceDeck[0][0][0])
-      return fuel
-   elif item == "tank":
-      tank = int(raceDeck[0][0][1])
-      return tank
-   elif item == "statement":
-      statement = raceDeck[0][1][0]
-      return statement 
-   elif item == "answer":
-      answer = raceDeck[0][1][1]
-      return answer
-
 ## def failedAnswerAction
 
 def failedAnswerAction(previousFaultState):
