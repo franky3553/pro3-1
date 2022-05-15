@@ -1,6 +1,12 @@
 import csv
 
+## def clearConsole
+
+def clear_console():
+    os.system('cls')
+
 global print1
+global print2
 
 auxiliarDeck = []
 startingDeck = []
@@ -105,3 +111,17 @@ def askStatement(previousFaultState):
    print1 = chooseItem("statement")
    print(chooseItem("statement"))
    askAnswer(previousFaultState, chooseItem("answer"))
+
+## def askAnswer
+
+def askAnswer(previousFaultState, answer):
+   global print2
+   clear_console()
+   print(print1)
+   answerRequest = input(": ")
+   clear_console()
+   print2 = answerRequest
+   print(print1 + ": " + print2)
+
+   examAnswer = examRequestWithItem(answerRequest)
+   examinationAction(examAnswer, previousFaultState, answer)
