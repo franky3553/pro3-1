@@ -111,7 +111,7 @@ def copyStartingDeckinAuxiliarDeck(startingDeck):
 ## def askCapsule
 
 def askCapsule():
-   previousFaultState = "NoPriorFailure"
+   previousFaultState = "noPriorFailure"
    askStatement(previousFaultState)
 
 ## def askStatement
