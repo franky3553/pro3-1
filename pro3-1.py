@@ -263,6 +263,15 @@ def examCapsuleMovement():
       prYellow("ONE MOOOOOREEEEEEE")
       step = input()
 
+## def extractFromDeckInsertToDeck
+
+def extractFromDeckInsertToDeck(extractionDeck, insertionDeck):
+   insertionDeck.insert(0, extractCapsulefromDeck(extractionDeck, 0)) 
+def extractCapsulefromDeck(deck, position):
+   capsuleSave = deck[position]
+   del deck[position]
+   return capsulaSave
+
 
 
 
