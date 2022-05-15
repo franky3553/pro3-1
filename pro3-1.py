@@ -270,7 +270,7 @@ def resetWinCapsule():
    winDeck[0][0][1] = 10
    winDeck[0][0][2] = 3
 
-
+## importExport CSV and decks
 
 importCSVinDeck("park", parkDeck)
 importCSVinDeck("race", raceDeck)
@@ -279,17 +279,16 @@ importCSVinDeck("win", winDeck)
 importStartingCSVinStartingDeck("starting", startingDeck)
 exportStartingDeckinCSV(startingDeck, "park")
 
-item = {
-   "fuel": int(raceDeck[0][0][0]),
-   "tank": int(raceDeck[0][0][1]),
-   "statement": raceDeck[0][1][0],
-   "answer": raceDeck[0][1][1],
-}
-
-
 ## MAIN LOOP
 
 while True:
+
+   item = {
+      "fuel": int(raceDeck[0][0][0]),
+      "tank": int(raceDeck[0][0][1]),
+      "statement": raceDeck[0][1][0],
+      "answer": raceDeck[0][1][1],
+   }
 
    print1 = ""
    print2 = ""
@@ -299,7 +298,6 @@ while True:
    exportDeckinCSV(parkDeck, "park")
    exportDeckinCSV(raceDeck, "race")
    exportDeckinCSV(winDeck, "win")
-
    
    prYellow("CONTIIIINUE>>>>>>>>")
    step = input()
