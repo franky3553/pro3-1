@@ -88,3 +88,10 @@ def copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck):
    for line in range(totalLines):
       auxiliarDeck.append([0, 0, 0])
       auxiliarDeck.append(startingDeck[line])
+
+
+## def askCapsule
+
+def askCapsule():
+   previousFaultState = "NoPriorFailure"
+   askStatement(previousFaultState)
