@@ -278,12 +278,12 @@ def preparation():
 
 ## importExport CSV and decks
 
+importStartingCSVinStartingDeck("starting", startingDeck)
+exportStartingDeckinCSV(startingDeck, "park")
+
 importCSVinDeck("park", parkDeck)
 importCSVinDeck("race", raceDeck)
 importCSVinDeck("win", winDeck)
-
-importStartingCSVinStartingDeck("starting", startingDeck)
-exportStartingDeckinCSV(startingDeck, "park")
 
 preparation()
 exportDeckinCSV(parkDeck, "park")
