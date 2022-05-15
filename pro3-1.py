@@ -110,11 +110,11 @@ def askStatement(previousFaultState):
    global print1
    print1 = chooseItem("statement")
    print(chooseItem("statement"))
-   askAnswer(previousFaultState, chooseItem("answer"))
+   askAnswer(previousFaultState)
 
 ## def askAnswer
 
-def askAnswer(previousFaultState, answer):
+def askAnswer(previousFaultState):
    global print2
    clear_console()
    print(print1)
@@ -124,7 +124,7 @@ def askAnswer(previousFaultState, answer):
    print(print1 + ": " + print2)
 
    examAnswer = examRequestWithItem(answerRequest)
-   examinationAction(examAnswer, previousFaultState, answer)
+   examinationAction(examAnswer, previousFaultState)
 
 ## def examRequestWithItem
 
@@ -139,3 +139,12 @@ def examRequestWithItem(request):
       print(">", chooseItem("answer"))
       step = input()
       return "Incorrect"
+
+## def examinationAction
+
+def examinationAction(examAnswer, previousFaultState):
+   if examAnswer == "Incorrect":
+      failedAnswerAction(previousFaultState)
+   elif examAnswer == "Correct":
+      successfulAnswerAction(previousFaultState)
+      
