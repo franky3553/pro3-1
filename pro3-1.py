@@ -237,5 +237,32 @@ def sortDeck(deck):
 def selectionParameterOrder(parameterOrder):
   return parameterOrder[0][0][0]
 
+## def examCapsuleMovement
+
+def examCapsuleMovement():
+   fuel = int(raceDeck[0][0][0])
+   tank = int(raceDeck[0][0][1])
+
+   if tank >= 12:
+
+      extractFromDeckInsertToDeck(raceDeck, winDeck)
+
+      resetWinCapsule()
+
+      exportDeckinCSV(winDeck, "win")
+      exportDeckinCSV(raceDeck, "race")
+      prYellow("WWWWWIIIIIIIIIINNNNNNNNNNNNNNNNNNNNNNNN")
+      step = input()
+
+   if fuel >= 1:
+   ## if elegirElemento("combustible")
+      extractFromDeckInsertToDeck(parkDeck, raceDeck)
+
+      exportDeckinCSV(parkDeck, "park")
+      exportDeckinCSV(raceDeck, "race")
+      prYellow("ONE MOOOOOREEEEEEE")
+      step = input()
+
+
 
 
