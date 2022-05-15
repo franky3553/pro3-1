@@ -178,7 +178,6 @@ def failedAnswerAction(previousFaultState):
    elif previousFaultState == "priorFailure":
       askAnswer("priorFailure")
 
-
 ## def successfulAnswerAction
 
 def successfulAnswerAction(previousFaultState):
@@ -196,4 +195,12 @@ def successfulAnswerAction(previousFaultState):
    
    examCapsuleMovement()
 
+## def decreaseTank
 
+def decreaseTank():
+   tankSelection = int(raceDeck[0][0][1])
+   if tankSelection < 2:
+      tankOperation = 0
+   else:
+      tankOperation = tankSelection - 2
+   return str(tankOperation)
