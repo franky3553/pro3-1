@@ -18,6 +18,8 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 global print1
 global print2
 
+race = True
+
 auxiliarDeck = []
 startingDeck = []
 parkDeck = []
@@ -141,7 +143,9 @@ def askAnswer(previousFaultState):
 def examRequestWithItem(request):
    global print1
    clear_console()
-   if request == item["answer"]: 
+   if request == "-exit":
+      return "-exit"
+   elif request == item["answer"]: 
       print1 += "\n:" + "\033[92m {}\033[00m" .format(print2)
       return "Correct"
    else:
@@ -153,7 +157,10 @@ def examRequestWithItem(request):
 ## def examinationAction
 
 def examinationAction(examAnswer, previousFaultState):
-   if examAnswer == "Incorrect":
+   if examAnswer == "-exit":
+      global race 
+      race = False
+   elif examAnswer == "Incorrect":
       failedAnswerAction(previousFaultState)
    elif examAnswer == "Correct":
       successfulAnswerAction(previousFaultState)
@@ -276,6 +283,17 @@ def preparation():
    extractFromDeckInsertToDeck(parkDeck, raceDeck)
 # to extract first capsule from park and insert in race to initiate correctly
 
+# def exirPreparation
+
+def exitPreparation():
+   resetDeck(parkDeck)
+   exportDeckinCSV(parkDeck, "park")
+   resetDeck(raceDeck)
+   exportDeckinCSV(raceDeck, "race")
+   resetDeck(winDeck)
+   exportDeckinCSV(winDeck, "win")
+
+
 ## importExport CSV and decks
 
 importStartingCSVinStartingDeck("starting", startingDeck)
@@ -291,7 +309,7 @@ exportDeckinCSV(raceDeck, "race")
 
 ## MAIN LOOP
 
-while True:
+while race:
 
    item = {
       "fuel": int(raceDeck[0][0][0]),
@@ -309,5 +327,13 @@ while True:
    exportDeckinCSV(raceDeck, "race")
    exportDeckinCSV(winDeck, "win")
    
-   prYellow("CONTIIIINUE>>>>>>>>")
-   step = input()
+   if race == True:
+      prYellow("CONTIIIINUE>>>>>>>>")
+      step = input()
+   else:
+      pass
+
+
+exitPreparation()
+print("Exit Complete")
+step=input()
