@@ -230,3 +230,12 @@ def spendFuel():
          fuelSelection -= 1
          row[0][0] = str(fuelSelection)
 
+## def sortDeck and selectionParameterOrder
+
+def sortDeck(deck):
+   deck.sort(key=selectionParameterOrder)
+def selectionParameterOrder(parameterOrder):
+  return parameterOrder[0][0][0]
+
+
+
