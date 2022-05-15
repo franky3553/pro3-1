@@ -58,14 +58,33 @@ def copyAuxiliarDeckinCSV(auxiliarDeck, csv):
 ## def starting importExport functions
 
 def importStartingCSVinStartingDeck(startingCSV, startingDeck):
-	resetDeck(auxiliarDeck)
+   resetDeck(auxiliarDeck)
    copyStartingCSVinAuxiliarDeck(startingCSV, auxiliarDeck)
    copyAuxiliarDeckinStartingDeck(auxiliarDeck, startingDeck)
    resetDeck(auxiliarDeck)
 	
-def exportStartingDeckinParkCSV(startingDeck, parkCSV):
+def exportStartingDeckinParkCSV(startingDeck, csv):
    resetDeck(auxiliarDeck)
    copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck)
-   copyAuxiliarDeckinParkCSV(auxiliarDeck, parkCSV)
+   copyAuxiliarDeckinCSV(auxiliarDeck, csv)
    resetDeck(auxiliarDeck)
 
+## def functions inside starting importExport functions
+
+def copyStartingCSVinAuxiliarDeck(startingCSV, auxiliarDeck):
+   with open("{}.csv".format(startingCSV)) as file:
+      reader = csv.reader(file, delimiter=",")
+      for row in reader:
+            auxiliarDeck.append(row)
+
+def copyAuxiliarDeckinStartingDeck(auxiliarDeck, startingDeck):
+   element = 0
+   for element in range(len(auxiliarDeck)):
+      startingDeck.append(auxiliarDeck[element])
+      element += 1
+
+def copyStartingDeckinAuxiliarDeck(startingDeck, auxiliarDeck):
+   totalLines = len(startingDeck)
+   for line in range(totalLines):
+      auxiliarDeck.append([0, 0, 0])
+      auxiliarDeck.append(startingDeck[line])
