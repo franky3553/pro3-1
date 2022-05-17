@@ -143,8 +143,8 @@ def askAnswer(previousFaultState):
 def examRequestWithItem(request):
    global print1
    clear_console()
-   if request == "-exit":
-      return "-exit"
+   if request == "-reset":
+      return "-reset"
    elif request == item["answer"]: 
       print1 += "\n:" + "\033[92m {}\033[00m" .format(print2)
       return "Correct"
@@ -157,7 +157,9 @@ def examRequestWithItem(request):
 ## def examinationAction
 
 def examinationAction(examAnswer, previousFaultState):
-   if examAnswer == "-exit":
+   if examAnswer == "-reset":
+      resetPro3()
+      print("Reset Complete")
       global race 
       race = False
    elif examAnswer == "Incorrect":
@@ -285,7 +287,7 @@ def preparation():
 
 # def exirPreparation
 
-def exitPreparation():
+def resetPro3():
    resetDeck(parkDeck)
    exportDeckinCSV(parkDeck, "park")
    resetDeck(raceDeck)
@@ -334,6 +336,6 @@ while race:
       pass
 
 
-exitPreparation()
+resetPro3()
 print("Exit Complete")
 step=input()
