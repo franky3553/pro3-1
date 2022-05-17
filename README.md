@@ -51,8 +51,7 @@
 ### 6. Ask sentence
 - Print sentence in console
 ### 7. Ask answer
-- Request answer
-	- Get answer in a variable named answerRequest
+- Request answer (Get answer in a variable named answerRequest)
 ### 8. Exam answer
 - Compare answerRequest value with actual capsule sentence value
 - If they match, return "Correct", if not, return "Incorrect"
