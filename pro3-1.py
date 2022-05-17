@@ -145,6 +145,8 @@ def examRequestWithItem(request):
    clear_console()
    if request == "-reset":
       return "-reset"
+   if request == "-exit":
+      return "-exit"
    elif request == item["answer"]: 
       print1 += "\n:" + "\033[92m {}\033[00m" .format(print2)
       return "Correct"
@@ -160,6 +162,7 @@ def examinationAction(examAnswer, previousFaultState):
    if examAnswer == "-reset":
       resetPro3()
       print("Reset Complete")
+   elif examAnswer == "-exit":
       global race 
       race = False
    elif examAnswer == "Incorrect":
@@ -335,7 +338,5 @@ while race:
    else:
       pass
 
-
-resetPro3()
 print("Exit Complete")
 step=input()
