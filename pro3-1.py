@@ -18,6 +18,9 @@ def prBlack(skk): print("\033[98m {}\033[00m" .format(skk))
 global print1
 global print2
 
+global pro3
+global race
+pro3 = True
 race = True
 
 auxiliarDeck = []
@@ -161,10 +164,8 @@ def examRequestWithItem(request):
 def examinationAction(examAnswer, previousFaultState):
    if examAnswer == "-reset":
       resetPro3()
-      print("Reset Complete")
    elif examAnswer == "-exit":
-      global race 
-      race = False
+      exit()
    elif examAnswer == "Incorrect":
       failedAnswerAction(previousFaultState)
    elif examAnswer == "Correct":
@@ -291,52 +292,65 @@ def preparation():
 # def exirPreparation
 
 def resetPro3():
+   global race
    resetDeck(parkDeck)
    exportDeckinCSV(parkDeck, "park")
    resetDeck(raceDeck)
    exportDeckinCSV(raceDeck, "race")
    resetDeck(winDeck)
    exportDeckinCSV(winDeck, "win")
+   race = False
 
+   print("Reset Complete")
 
-## importExport CSV and decks
+def exit():
+   global race
+   global pro3
+   pro3 = False
+   race = False
 
-importStartingCSVinStartingDeck("starting", startingDeck)
-exportStartingDeckinCSV(startingDeck, "park")
+## pro3 LOOP
 
-importCSVinDeck("park", parkDeck)
-importCSVinDeck("race", raceDeck)
-importCSVinDeck("win", winDeck)
+while pro3:
 
-preparation()
-exportDeckinCSV(parkDeck, "park")
-exportDeckinCSV(raceDeck, "race")
+   ## importExport CSV and decks
 
-## MAIN LOOP
+   importStartingCSVinStartingDeck("starting", startingDeck)
+   exportStartingDeckinCSV(startingDeck, "park")
 
-while race:
+   importCSVinDeck("park", parkDeck)
+   importCSVinDeck("race", raceDeck)
+   importCSVinDeck("win", winDeck)
 
-   item = {
-      "fuel": int(raceDeck[0][0][0]),
-      "tank": int(raceDeck[0][0][1]),
-      "statement": raceDeck[0][1][0],
-      "answer": raceDeck[0][1][1],
-   }
-
-   print1 = ""
-   print2 = ""
-
-   askCapsule()
-
+   preparation()
    exportDeckinCSV(parkDeck, "park")
    exportDeckinCSV(raceDeck, "race")
-   exportDeckinCSV(winDeck, "win")
-   
-   if race == True:
+
+   race = True
+
+   ## MAIN LOOP
+
+   while race:
+
+      item = {
+         "fuel": int(raceDeck[0][0][0]),
+         "tank": int(raceDeck[0][0][1]),
+         "statement": raceDeck[0][1][0],
+         "answer": raceDeck[0][1][1],
+      }
+
+      print1 = ""
+      print2 = ""
+
+      askCapsule()
+
+      exportDeckinCSV(parkDeck, "park")
+      exportDeckinCSV(raceDeck, "race")
+      exportDeckinCSV(winDeck, "win")
+      
       prYellow("CONTIIIINUE>>>>>>>>")
       step = input()
-   else:
-      pass
+
 
 print("Exit Complete")
 step=input()
