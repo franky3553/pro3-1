@@ -146,6 +146,8 @@ def askAnswer(previousFaultState):
 def examRequestWithItem(request):
    global print1
    clear_console()
+   if request == "-showall":
+      return "-showall"
    if request == "-reset":
       return "-reset"
    if request == "-exit":
@@ -164,12 +166,15 @@ def examRequestWithItem(request):
 ## def examinationAction
 
 def examinationAction(examAnswer, previousFaultState):
-   if examAnswer == "-reset":
+   if examAnswer == "-showall":
+      showDeck(startingDeck)
+   elif examAnswer == "-reset":
       resetPro3()
    elif examAnswer == "-exit":
       exit()
    elif examAnswer == "-help":
       print("Use the following commands while studying:")
+      print("'-showall', get all sentences/answers")
       print("'-reset', all time changes")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
