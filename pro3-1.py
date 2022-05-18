@@ -313,6 +313,21 @@ def exit():
 
 while pro3:
 
+   ## intructions
+
+   if race == True:
+      clear_console()
+      prCyan("Welcome to Pro3 and let's learn Spanish!")
+      print("")
+      print("All changes are saved automatically")
+      print("Use the following commands while studying:")
+      print("'-reset', all time changes")
+      print("'-exit', leave Pro3")
+      print("'-help', get all commands")
+      print("")
+      print("Let's go to study!: pulse" + "\033[92m {}\033[00m" .format("ENTER"))
+      step=input()
+
    ## importExport CSV and decks
 
    importStartingCSVinStartingDeck("starting", startingDeck)
