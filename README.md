@@ -34,6 +34,16 @@ Step by step methods to guide the reader how to setup local dev environment for 
 2. Open file in your terminal
 3. Execute: ````python pro3-1.py````
 
+### 🧰 Commands
+-   ``-showall`` Get all sentences/answers
+-   ``-showremain`` Get all remaining sentences/answers
+-   ``-showstudy`` Get all inProgress sentences/answers
+-   ``-showlearn`` Get all learned sentences/answers
+-   ``-reset`` All advances are removed
+-   ``-exit`` Leave Pro3
+-   ``-help`` Get all commands 
+
+
 		
 # 💡How pro-3 works
 
