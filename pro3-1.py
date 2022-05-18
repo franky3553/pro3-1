@@ -338,13 +338,17 @@ while pro3:
    ## importExport CSV and decks
 
    importStartingCSVinStartingDeck("starting", startingDeck)
-   exportStartingDeckinCSV(startingDeck, "park")
+
+   if len(raceDeck) < 1:
+      exportStartingDeckinCSV(startingDeck, "park")
 
    importCSVinDeck("park", parkDeck)
    importCSVinDeck("race", raceDeck)
    importCSVinDeck("win", winDeck)
 
-   preparation()
+   if len(raceDeck) < 1:
+      preparation()
+
    exportDeckinCSV(parkDeck, "park")
    exportDeckinCSV(raceDeck, "race")
 
