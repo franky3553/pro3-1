@@ -150,6 +150,8 @@ def examRequestWithItem(request):
       return "-reset"
    if request == "-exit":
       return "-exit"
+   if request == "-help":
+      return "-help"
    elif request == item["answer"]: 
       print1 += "\n:" + "\033[92m {}\033[00m" .format(print2)
       return "Correct"
@@ -166,6 +168,11 @@ def examinationAction(examAnswer, previousFaultState):
       resetPro3()
    elif examAnswer == "-exit":
       exit()
+   elif examAnswer == "-help":
+      print("Use the following commands while studying:")
+      print("'-reset', all time changes")
+      print("'-exit', leave Pro3")
+      print("'-help', get all commands")
    elif examAnswer == "Incorrect":
       failedAnswerAction(previousFaultState)
    elif examAnswer == "Correct":
