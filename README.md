@@ -16,42 +16,26 @@
 
 <hr />
 
-## 🧐About
+### 🧐About
 
 Pro3 has been created with the purpose of memorizing the main Spanish vocabulary and phrases in the most effective way, keeping the focus on memorizing without the possibility of losing concentration.
 
 There are other options on the market, but the main task of Pro3 is to keep you fully focused on correctly typing the answer the first consecutive times or else you will constantly fail, unlike other applications where you just need to choose one option from the proposals, where cheating is encouraged
 
-# How to use pro3-1
+### 📚Prerequisite
 
-## Step A
-### 1. Download following files in previously created folder named "pro3-1":
-  	pro3-1.py
-  	starting.csv
-  	park.csv
-  	race.csv
-  	win.csv
+-   Python 3
 
-## Step B
-### 2. Open terminal
-### 3. Go to pro3.1 folder route
-### 4. Execute:
-	python pro3-1.py
+### 🚀How to Run Pro3
 
-## Step C
-### 5. Type the translation of the word that appears on the screen
-### 6. Pulse enter to examn your answer
-### 7. Pulse enter again to continue
+Step by step methods to guide the reader how to setup local dev environment for eg:
 
-## ExtraStep
-### 8. Type and enter the following to exit:
-	-exit
-### 9. Type and enter the following to reset all data:
-	-reset
+1. Download this repo
+2. Open file in your terminal
+3. Execute: ````python pro3-1.py````
+
 		
-		
-		
-# How pro-3 works
+# 💡How pro-3 works
 
 ## STEP A: Import, export and transforming csv and decks data formats
 ### 1. Read startingCSV
