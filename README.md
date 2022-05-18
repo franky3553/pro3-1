@@ -43,7 +43,18 @@ Step by step methods to guide the reader how to setup local dev environment for 
 -   ``-exit`` Leave Pro3
 -   ``-help`` Get all commands 
 
+### 📝Todo
 
+Functions for managing and searching for words and phrases will be added soon. The speed and ease of use will also be improved by adding a shortcut, as well as shortkeys
+
+-   Add Direct Access
+-   Add search functionality
+
+### 🎈Usage
+
+-   Read the sentence. Write translation. Pulse enter
+-   To get the most out of it, write the translation as fast as possible. It is better to miss 9 times but hit 3 than to hit 6 taking twice as long. Depending on your performance it will become easier or more difficult, so don't force yourself, let your mind and your keyboard do everything for you.
+-   Progress is saved automatically so don't worry about anything else to learn
 		
 # 💡How pro-3 works
 
