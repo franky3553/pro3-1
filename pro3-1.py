@@ -190,7 +190,7 @@ def examinationAction(examAnswer, previousFaultState):
       print("'-showremain', get all remaining sentences/answers")
       print("'-showstudy', get all inProgress sentences/answers")
       print("'-showlearn', get all learned sentences/answers")
-      print("'-reset', all time changes")
+      print("'-reset', all advances are removed")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
    elif examAnswer == "Incorrect":
@@ -363,7 +363,7 @@ while pro3:
       print("'-showremain', get all remaining sentences/answers")
       print("'-showstudy', get all inProgress sentences/answers")
       print("'-showlearn', get all learned sentences/answers")
-      print("'-reset', all time changes")
+      print("'-reset', all advances are removed")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
       print("")
