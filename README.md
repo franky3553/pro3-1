@@ -6,13 +6,18 @@
 
 <h1 align="center">Pro3</h1>
 
+ <p align="center">
+    A virtual tutor to learn Spanish
+    <br />
+	  Get your keyboard ready and let's get started!
+    <br />
+  </p>
+
 <div align="center">
 
-<!--gif-->???
-
-</div>
-
 > Try, Fail, Fix, Hit (TFFH), as in real life.
+	
+</div>
 
 <hr />
 
@@ -21,6 +26,14 @@
 Pro3 has been created with the purpose of memorizing the main Spanish vocabulary and phrases in the most effective way, keeping the focus on memorizing without the possibility of losing concentration.
 
 There are other options on the market, but the main task of Pro3 is to keep you fully focused on correctly typing the answer the first consecutive times or else you will constantly fail, unlike other applications where you just need to choose one option from the proposals, where cheating is encouraged
+
+### 🎈Usage
+
+<img src="./pro31.gif" alt="My Project GIF" width="300" height="200">
+
+-   Read the sentence. Write translation. Pulse enter
+-   To get the most out of it, write the translation as fast as possible. It is better to miss 9 times but hit 3 than to hit 6 taking twice as long. Depending on your performance it will become easier or more difficult, so don't force yourself, let your mind and your keyboard do everything for you.
+-   Progress is saved automatically so don't worry about anything else to learn
 
 ### 📚Prerequisite
 
@@ -35,13 +48,17 @@ Step by step methods to guide the reader how to setup local dev environment for 
 3. Execute: ````python pro3-1.py````
 
 ### 🧰 Commands
+
+<img src="./pro32.gif" alt="My Project GIF" width="300" height="200">
+
+
 -   ``-showall`` Get all sentences/answers
 -   ``-showremain`` Get all remaining sentences/answers
 -   ``-showstudy`` Get all inProgress sentences/answers
 -   ``-showlearn`` Get all learned sentences/answers
 -   ``-reset`` All advances are removed
 -   ``-exit`` Leave Pro3
--   ``-help`` Get all commands 
+-   ``-help`` Get all commands
 
 ### 📝Todo
 
@@ -49,12 +66,6 @@ Functions for managing and searching for words and phrases will be added soon. T
 
 -   Add Direct Access
 -   Add search functionality
-
-### 🎈Usage
-
--   Read the sentence. Write translation. Pulse enter
--   To get the most out of it, write the translation as fast as possible. It is better to miss 9 times but hit 3 than to hit 6 taking twice as long. Depending on your performance it will become easier or more difficult, so don't force yourself, let your mind and your keyboard do everything for you.
--   Progress is saved automatically so don't worry about anything else to learn
 
 ### 📈Future Plans
 
