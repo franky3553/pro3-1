@@ -1,8 +1,381 @@
+ser,be
+estar,to be
+tener,have
+haber,to have
+hay,there is
 querer,want
-amar,love
-ayudar,help
-intentar,try
+desear,want
+amar,to love
+ayudar,to help
+intentar,to try
 conseguir,get
-desear,wish
 pedir,ask for
 necesitar,need
+vivir,to live
+nacer,be born
+morir,to die
+crecer,grow up
+sentir,feel
+doler,to hurt
+curar,cure
+ver,watch
+mirar,look at
+oir,hear
+escuchar,to listen
+gustar,like
+tocar,play
+oler,smell
+hablar,to talk
+decir,tell
+leer,read
+escribir,to write
+borrar,erase
+firmar,sign
+poder,can
+hacer,make
+trabajar,to work
+fabricar,manufacture
+construir,build
+derribar,shoot down
+eliminar,remove
+llenar,fill in
+vaciar,empty
+pensar,to think
+imaginar,to imagine
+creer,believe
+saber,to know
+conocer,know
+recordar,to remember
+olvidar,to forget
+estudiar,study
+atender,attend
+comprender,understand
+aprender,learn
+memorizar,memorize
+enseñar,to teach
+explicar,explain
+acertar,hit
+equivocar,wrong
+ir,to go
+llegar,get
+volver,return
+venir,come
+entrar,get in
+salir,go out
+sacar,to get
+andar,walk
+correr,to run
+saltar,skip
+bailar,dance
+parar,stop
+esperar,expect
+cruzar,cross
+continuar,continue
+viajar,to travel
+subir,increase
+bajar,go down
+montar,mount
+bajar,go down
+conducir,lead
+durar,to last
+tardar,delay
+cansar,tire out
+descansar,to rest
+acostar,lay down
+dormir,to sleep
+despertar,wake
+levantar,lift
+vestir,wear
+asear,clean
+limpiar,clean
+manchar,stain
+comer,to eat
+beber,to drink
+desayunar,eat breakfast
+almorzar,have lunch
+cenar,dine
+tomar,take
+comprar,purchase
+alquilar,rent
+valer,to worth
+costar,cost
+pagar,to pay
+deber,should
+cobrar,charge
+gastar,to spend
+dar,give
+quitar,remove
+recibir,receive
+perder,to lose
+buscar,search for
+encontrar,find
+mostrar,to show
+cambiar,change
+devolver,return
+coger,take
+depositar,to deposit
+utilizar,use
+tirar,throw away
+caer,fall
+recoger,pick
+llevar,bring
+traer,to bring
+enviar,send
+colocar,place
+poner,place
+añadir,add
+juntar,put together
+separar,pull apart
+faltar,lack
+sobrar,left over
+contar,tell
+medir,measure
+pesar,weigh
+calcular,calculate
+sumar,add
+restar,subtract
+multiplicar,multiply
+dividir,split
+permitir,let
+aguantar,endure
+molestar,annoy
+empezar,begin
+terminar,finish
+abrir,open
+cerrar,close
+llamar,call
+solucionar,sort out
+arreglar,fix
+funcionar,function
+estropear,spoil
+romper,to break
+cortar,cut off
+pegar,paste
+documentacion,documentation
+pasaporte,passport
+policia,police
+aduana,customs
+equipaje,baggage
+maleta,bag
+bolso,bag
+cola,tail
+fila,line
+control,control
+ayuda,help
+entrada,entry
+salida,exit
+derecha,right
+izquierda,left
+aeropuerto,airport
+avion,plane
+vuelo,flight
+barco,boat
+tren,train
+metro,meter
+tranvia,trolley car
+vagon,wagon
+autobus,bus
+taxi,cab
+coche,car
+moto,motorcycle
+bicicleta,bicycle
+autopista,freeway
+carretara,highway
+gasolinera,fuel station
+camino,path
+parada,stop
+anden,platform
+via,via
+horario,schedule
+billete,ticket
+asiento,seat
+fila,line
+turista,tourist
+hotel,hotel
+habitacion,room
+numero,number
+llave,wrench
+ascensor,lift
+escaleras,ladders
+planta/piso,ground floor
+pasillo,corridor
+salon,living room
+sofa,couch
+sillon,armchair
+silla,chair
+mesa,desk
+telefono,phone
+television,television
+mando/tv,tv remote
+pilas,batteries
+electricidad,electricity
+lampara,lamp
+luz/solar,sunlight
+dormitorio,bedroom
+armario,closet
+cama,bed
+sabana,bed sheet
+manta,blanket
+edredon,quilt
+baño,bath
+ducha,shower
+jabon,soap
+toalla,towel
+papel higienico,toilet paper
+cocina,kitchen room
+plato,plate
+bandeja,tray
+vaso,cup
+taza,cup
+botella,bottle
+cubierto,covered
+cuchara,spoon
+tenedor,fork
+cuchillo,knife
+servilleta,napkin
+cosa,stuff
+objeto,object
+maquina,machine
+aparato,apparatus
+ejemplo,example
+pais,country
+españa,spain
+alemania,germany
+español,spanish
+aleman,german
+idioma,idiom
+frontera,border
+ciudad,town
+pueblo,village
+casa,house
+edificio,building
+piso,floor
+casa,house
+calle,street
+plaza,square
+cruce,crossing
+esquina,corner
+centro,hub
+ciudad,town
+principio,beginning
+mitad,half
+fin/final,end/end
+parque,park
+jardin,garden
+fuente,source
+hospital,hospital
+ambulancia,ambulance
+farmacia,pharmacy
+pastilla,tablet
+calmante,pain relieving
+antibiotico,antibiotic
+herida,wound
+dolor,pain
+fiebre,fever
+tienda/comercio,shop/trade
+empresa,business
+supermercado,supermarket
+restaurante,restaurant
+cafeteria,cafeteria
+taller,workshop
+agencia,agency
+precio,price
+regalo,gift
+gratis,free
+impuestos,taxes
+banco,bank
+dinero,money
+euro,euro
+billete,ticket
+tarjeta de credito,credit card
+cajero automatico,atm
+escuela,school
+academia,academy
+instituto,institute
+universidad,college
+pan,bread
+pasta,pasta
+sopa,soup
+patatas,potatoes
+arroz,rice
+verdura,vegetable
+ensalada,salad
+salsa,sauce
+huevo,egg
+entrantes,starters
+harina de trigo,wheat flour
+sal ,salt
+menu,menu
+carne,meat
+ternera,veal
+solomillo,sirloin
+pollo,chicken
+pescado,fish
+frito,fried
+asado,roast
+postre,dessert
+fruta,fruit
+naranja,orange
+platano,banana
+yogur,yogurt
+tarta,pie
+pastel,pie
+chocolate,chocolate
+limon,lemon
+helado,icy
+cafe,coffee
+te,tea
+leche,milk
+azucar,sugar
+sacarina,saccharin
+agua,water
+vino,wine
+cerveza,beer
+alcohol,alcohol
+naturaleza,nature
+mar,sea
+playa,beach
+rio,river
+montaña,mountain
+bosque,forest
+arbol,tree
+campo,countryside
+papel,paper
+carta,letter
+sobre,on
+sello,seal
+libro,book
+periodico,newspaper
+noticia,news
+aviso,warning
+lapiz,pencil
+hombre,men
+mujer,women
+chico,guy
+chica,girl
+niño,little boy
+niña,little girl
+paciente,patient
+amigo,dude
+padre,father
+madre,mother
+hijo,son
+hija,daughter
+hermano,brother
+hermana,sister
+trabajo,worked
+estudiante,student
+profesor,teacher
+maestro,teacher
+medico,medical
+enfermera,nurse
+presidente,president
+director,director
+encargado,in charge
+empleado,employee
+camarero,waiter
+secretario,secretary
+auxiliar de enfermeria,nursing assistant
+enfermero,male nurse
+idea,idea
+verdad,verdadero
