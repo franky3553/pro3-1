@@ -148,6 +148,12 @@ def examRequestWithItem(request):
    clear_console()
    if request == "-showall":
       return "-showall"
+   if request == "-showremain":
+      return "-showremain"
+   if request == "-showstudy":
+      return "-showstudy"
+   if request == "-showlearn":
+      return "-showlearn"
    if request == "-reset":
       return "-reset"
    if request == "-exit":
@@ -168,6 +174,12 @@ def examRequestWithItem(request):
 def examinationAction(examAnswer, previousFaultState):
    if examAnswer == "-showall":
       showDeck(startingDeck)
+   if examAnswer == "-showremain":
+      showDeck(parkDeck)
+   if examAnswer == "-showstudy":
+      showDeck(raceDeck)
+   if examAnswer == "-showlearn":
+      showDeck(winDeck)
    elif examAnswer == "-reset":
       resetPro3()
    elif examAnswer == "-exit":
@@ -175,6 +187,9 @@ def examinationAction(examAnswer, previousFaultState):
    elif examAnswer == "-help":
       print("Use the following commands while studying:")
       print("'-showall', get all sentences/answers")
+      print("'-showremain', get all remaining sentences/answers")
+      print("'-showstudy', get all inProgress sentences/answers")
+      print("'-showlearn', get all learned sentences/answers")
       print("'-reset', all time changes")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
@@ -301,7 +316,18 @@ def preparation():
    extractFromDeckInsertToDeck(parkDeck, raceDeck)
 # to extract first capsule from park and insert in race to initiate correctly
 
-# def exirPreparation
+## def showDeck
+
+def showDeck(deck):
+   try:
+      if len(deck[0][1][0]) > 1:
+         for capsule in range(len(deck)):
+            print(str(capsule+1) + ". " + deck[capsule][1][0] + " - " + deck[capsule][1][1])
+      elif len(deck) != 0:
+         for line in range(len(deck)):
+            print(str(line+1) + ". " + deck[line][0] + " - " + deck[line][1])
+   except:
+      print("No learned Sentences")
 
 def resetPro3():
    global race
@@ -333,6 +359,10 @@ while pro3:
       print("")
       print("All changes are saved automatically")
       print("Use the following commands while studying:")
+      print("'-showall', get all sentences/answers")
+      print("'-showremain', get all remaining sentences/answers")
+      print("'-showstudy', get all inProgress sentences/answers")
+      print("'-showlearn', get all learned sentences/answers")
       print("'-reset', all time changes")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
@@ -343,12 +373,12 @@ while pro3:
    ## importExport CSV and decks
 
    importStartingCSVinStartingDeck("starting", startingDeck)
+   importCSVinDeck("race", raceDeck)
 
    if len(raceDeck) < 1:
       exportStartingDeckinCSV(startingDeck, "park")
 
    importCSVinDeck("park", parkDeck)
-   importCSVinDeck("race", raceDeck)
    importCSVinDeck("win", winDeck)
 
    if len(raceDeck) < 1:
