@@ -1,7 +1,7 @@
 import csv
 import os
 
-## def clearConsole
+## def clearConsole 
 
 def clear_console():
    os.system('cls')
