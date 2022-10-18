@@ -1,8 +1,3 @@
-<div align="center">
-
-![imagen](https://user-images.githubusercontent.com/45402163/168968927-27e58363-18df-4cf9-861a-40bb9dde3ef0.png)
-
-</div>
 
 <h1 align="center">Pro3</h1>
 
