@@ -17,9 +17,9 @@
 
 > Try, Fail, Fix, Hit (TFFH), as in real life.
 	
->[Deploy Links!](#deploy)
-	
 </div>
+
+[DEPLOY LINKS!](#deploy)
 
 <hr />
 
