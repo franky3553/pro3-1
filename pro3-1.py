@@ -190,7 +190,7 @@ def examinationAction(examAnswer, previousFaultState):
       print("'-showremain', get all remaining sentences/answers")
       print("'-showstudy', get all inProgress sentences/answers")
       print("'-showlearn', get all learned sentences/answers")
-      print("'-reset', all time changes")
+      print("'-reset', all advances are removed")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
    elif examAnswer == "Incorrect":
@@ -282,8 +282,6 @@ def examCapsuleMovement():
 
       exportDeckinCSV(winDeck, "win")
       exportDeckinCSV(raceDeck, "race")
-      prYellow("WWWWWIIIIIIIIIINNNNNNNNNNNNNNNNNNNNNNNN")
-      step = input()
 
    if fuel >= 1:
    ## if elegirElemento("combustible")
@@ -291,8 +289,6 @@ def examCapsuleMovement():
 
       exportDeckinCSV(parkDeck, "park")
       exportDeckinCSV(raceDeck, "race")
-      prYellow("ONE MOOOOOREEEEEEE")
-      step = input()
 
 ## def extractFromDeckInsertToDeck
 
@@ -363,7 +359,7 @@ while pro3:
       print("'-showremain', get all remaining sentences/answers")
       print("'-showstudy', get all inProgress sentences/answers")
       print("'-showlearn', get all learned sentences/answers")
-      print("'-reset', all time changes")
+      print("'-reset', all advances are removed")
       print("'-exit', leave Pro3")
       print("'-help', get all commands")
       print("")
@@ -409,7 +405,6 @@ while pro3:
       exportDeckinCSV(raceDeck, "race")
       exportDeckinCSV(winDeck, "win")
       
-      prYellow("CONTIIIINUE>>>>>>>>")
       step = input()
 
 
