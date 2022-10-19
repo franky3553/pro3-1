@@ -1,6 +1,12 @@
 
 <h1 align="center">Pro3</h1>
 
+<div align="center">
+
+![imagen](https://user-images.githubusercontent.com/45402163/168968927-27e58363-18df-4cf9-861a-40bb9dde3ef0.png)
+
+</div>
+
  <p align="center">
     A virtual tutor to learn Spanish
     <br />
@@ -11,10 +17,9 @@
 <div align="center">
 
 > Try, Fail, Fix, Hit (TFFH), as in real life.
-	
-</div>
 
-[DEPLOY LINKS!](#deploy)
+> [DEPLOY LINKS!](#deploy)
+</div>
 
 <hr />
 
@@ -122,27 +127,42 @@ In the future the language will be changed to java to be compatible with related
 ---
 		
 ### Deploy links<a name="deploy"></a>
-
+* Zero Option: Heroku.com (live) [Why not keroku?](#whyNotHeroku)
+  * Alternative 0: https://pro3-1sabe.herokuapp.com/ (if it doesn't work choose Alternative 1: Direct Access)
+  * Alternative 1: Direct Access
+    * STEP 1: LOGIN
+    <img src="./heroku-step1.gif" alt="My Project GIF" width="200" height="400">
+    
+    * STEP 2: ACCESS THE BASH OF OUR APP
+      * user: baronbuho@gmail.com
+      * password: codeinstitute3#
+    <img src="./heroku-step2.gif" alt="My Project GIF" width="200" height="400">
+    
+    * STEP 3: RUN OUR APP
+    <img src="./heroku-step3.gif" alt="My Project GIF" width="200" height="400">
+    
 * First Option: Gitpod.io (live)
-  * Alternative 1: https://gitpod.io/start/#franky3553-pro31-4wg3crk4si9
-  * Alternative 2: https://gitpod.io/start/#amethyst-cod-et2yt3l2i5n
+  * Alternative 2: https://gitpod.io/start/#franky3553-pro31-4wg3crk4si9
+  * Alternative 3: https://gitpod.io/start/#amethyst-cod-et2yt3l2i5n
 	
 * Second Option: Replit.com
-  * Alternative 3: https://replit.com/@juan-francisc38/pro3-1?v=1
+  * Alternative 4: https://replit.com/@juan-francisc38/pro3-1?v=1
 	
 * Third Option: PythonAnywhere.com
-  * Alternative 4: https://www.pythonanywhere.com/user/franky3553/shares/509bd5fbd3d54be5967184e684dd45af/
+  * Alternative 5: https://www.pythonanywhere.com/user/franky3553/shares/509bd5fbd3d54be5967184e684dd45af/
 
-* Fourth option: Manually
+* Fourth option: Manually (Alternative 6)
   1. Download this repo
   2. Open file in your terminal
   3. Execute: ``python pro3-1.py``
 
 ---
 
-#### Why not Heroku?
+#### Why not Heroku?<a name="whyNotHeroku"></a>
 
-I had problems connecting to heroku.com. After several days I have run into this recursive error:
+(Now pro3-1 is deployed in heroku, but it is more difficult to use because it is a terminal app)
+
+I had problems connecting to heroku.com. After several time I have run into this recursive error:
 
 ``
 at=error code=H14 desc="No web processes running" method=GET path="/" host=glacial-mesa-48481.herokuapp.com request_id=681cbb73-4404-4e42-babf-2e8aa970ba83 fwd="47.62.72.45" dyno= connect= service= status=503 bytes= protocol=https
@@ -158,7 +178,19 @@ Meanwhile tried on other alternative platforms, specifically on:
 
 I have had different errors in each of them. I suspect it is due to the lack of web interface in my app and the use of .csv files. I'm still looking for a more efficient solution.
 
-The only and useful alternatives available have been:
+I finally solved it! How?:
+
+1. In myMainApp folder, Create "Procfile" file and not "procfile.txt"
+2. In Procfile, add ``worker: python pro3-1.py``, and not ``worker python pro3-1.py``
+3. In myMainApp folder, Create "requirements.txt" file
+4. Insert my App requirements exe ``pip freeze > requirements.txt``
+5. In myMainApp folder, Create "runtime.txt" file
+6. In runtime.txt, add ``python-3.10.4`` because my original python version (python 3.10.8) doesn't work on heroku 22
+7. Fix sintax error in runtime.txt: Python 3.10.4 -> python-3.10.4
+8. Fixing heroku branches specifications: chaos in migrates, main and master checkouts etc
+
+So, now pro3-1 is deployed in heroku, but it is more difficult to use because it is a terminal app. Because of this i have created more alternatives on the followin plattforms:
+
 1. gitpod.io
 2. replit.com
 3. pythonanywhere.com
