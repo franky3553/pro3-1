@@ -128,18 +128,21 @@ In the future the language will be changed to java to be compatible with related
 		
 ### Deploy links<a name="deploy"></a>
 * Zero Option: Heroku.com (live) [Why not keroku?](#whyNotHeroku)
-  * Alternative 0: https://pro3-1sabe.herokuapp.com/ (if it doesn't work choose Alternative 1: Direct Access)
+  * Alternative 0: https://pro3-1sabe.herokuapp.com/ 
+    * (if it doesn't work choose Alternative 1: Direct Access)
   * Alternative 1: Direct Access
     * STEP 1: LOGIN
-    <img src="./heroku-step1.gif" alt="My Project GIF" width="200" height="400">
+      * Go to https://id.heroku.com/login
+      * User: baronbuho@gmail.com
+      * Password: codeinstitute3#
+    * <img src="./heroku-step1.gif" alt="My Project GIF" width="300" height="300">
     
     * STEP 2: ACCESS THE BASH OF OUR APP
-      * user: baronbuho@gmail.com
-      * password: codeinstitute3#
-    <img src="./heroku-step2.gif" alt="My Project GIF" width="200" height="400">
+    * <img src="./heroku-step2.gif" alt="My Project GIF" width="300" height="300">
     
     * STEP 3: RUN OUR APP
-    <img src="./heroku-step3.gif" alt="My Project GIF" width="200" height="400">
+      * execute: ``python pro3-1.py``
+    * <img src="./heroku-step3.gif" alt="My Project GIF" width="300" height="300">
     
 * First Option: Gitpod.io (live)
   * Alternative 2: https://gitpod.io/start/#franky3553-pro31-4wg3crk4si9
@@ -148,7 +151,7 @@ In the future the language will be changed to java to be compatible with related
 * Second Option: Replit.com
   * Alternative 4: https://replit.com/@juan-francisc38/pro3-1?v=1
 	
-* Third Option: PythonAnywhere.com
+* Third Option: Pythonanywhere.com
   * Alternative 5: https://www.pythonanywhere.com/user/franky3553/shares/509bd5fbd3d54be5967184e684dd45af/
 
 * Fourth option: Manually (Alternative 6)
@@ -160,7 +163,7 @@ In the future the language will be changed to java to be compatible with related
 
 #### Why not Heroku?<a name="whyNotHeroku"></a>
 
-(Now pro3-1 is deployed in heroku, but it is more difficult to use because it is a terminal app)
+*(Now pro3-1 is deployed in heroku, but it is more difficult to use because it is a terminal app)*
 
 I had problems connecting to heroku.com. After several time I have run into this recursive error:
 
@@ -169,11 +172,11 @@ at=error code=H14 desc="No web processes running" method=GET path="/" host=glaci
 ``
 
 Meanwhile tried on other alternative platforms, specifically on:
-1. railway.app
-2. cyclic.sh
-3. render.com
-4. deta.sh
-5. glitch.com
+1. Railway.app
+2. Cyclic.sh
+3. Render.com
+4. Deta.sh
+5. Glitch.com
 6. Fly.io
 
 I have had different errors in each of them. I suspect it is due to the lack of web interface in my app and the use of .csv files. I'm still looking for a more efficient solution.
@@ -189,13 +192,13 @@ I finally solved it! How?:
 7. Fix sintax error in runtime.txt: Python 3.10.4 -> python-3.10.4
 8. Fixing heroku branches specifications: chaos in migrates, main and master checkouts etc
 
-So, now pro3-1 is deployed in heroku, but it is more difficult to use because it is a terminal app. Because of this i have created more alternatives on the followin plattforms:
+So, now pro3-1 is deployed in heroku, but it is more difficult to use because it is a terminal app. Because of this i have created more alternatives on the following plattforms:
 
-1. gitpod.io
-2. replit.com
-3. pythonanywhere.com
+1. Gitpod.io
+2. Replit.com
+3. Pythonanywhere.com
 
-..which have been exposed in the [Deploy Links!](#deploy) section
+..which have been exposed in the [Deploy Links!](#deploy) section (Alternatives 2 to 5)
 
 ---
 
