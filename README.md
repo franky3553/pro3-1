@@ -1,8 +1,3 @@
-<div align="center">
-
-![imagen](https://user-images.githubusercontent.com/45402163/168968927-27e58363-18df-4cf9-861a-40bb9dde3ef0.png)
-
-</div>
 
 <h1 align="center">Pro3</h1>
 
@@ -18,6 +13,8 @@
 > Try, Fail, Fix, Hit (TFFH), as in real life.
 	
 </div>
+
+[DEPLOY LINKS!](#deploy)
 
 <hr />
 
@@ -39,13 +36,7 @@ There are other options on the market, but the main task of Pro3 is to keep you 
 
 -   Python 3
 
-### 🚀How to Run Pro3
-
-Step by step methods to guide the reader how to setup local dev environment for eg:
-
-1. Download this repo
-2. Open file in your terminal
-3. Execute: ````python pro3-1.py````
+---
 
 ### 🧰 Commands
 
@@ -60,12 +51,16 @@ Step by step methods to guide the reader how to setup local dev environment for 
 -   ``-exit`` Leave Pro3
 -   ``-help`` Get all commands
 
+---
+
 ### 📝Todo
 
 Functions for managing and searching for words and phrases will be added soon. The speed and ease of use will also be improved by adding a shortcut, as well as shortkeys
 
 -   Add Direct Access
 -   Add search functionality
+
+---
 
 ### 📈Future Plans
 
@@ -75,7 +70,9 @@ In the future the language will be changed to java to be compatible with related
 -   Competition mode
 -   Race mode
 -   Analytics
-		
+	
+---
+
 ### 💡How pro-3 works
 
 #### STEP A: Import, export and transforming csv and decks data formats
@@ -121,14 +118,58 @@ In the future the language will be changed to java to be compatible with related
 - Means you have reached the maximum level in that capsule
 ##### 15. Update all changes by exporting from deck to csv files
 ##### 16. The loop start again
+
+---
 		
+### Deploy links<a name="deploy"></a>
+
+* First Option: Gitpod.io (live)
+  * Alternative 1: https://gitpod.io/start/#franky3553-pro31-4wg3crk4si9
+  * Alternative 2: https://gitpod.io/start/#amethyst-cod-et2yt3l2i5n
+	
+* Second Option: Replit.com
+  * Alternative 3: https://replit.com/@juan-francisc38/pro3-1?v=1
+	
+* Third Option: PythonAnywhere.com
+  * Alternative 4: https://www.pythonanywhere.com/user/franky3553/shares/509bd5fbd3d54be5967184e684dd45af/
+
+* Fourth option: Manually
+  1. Download this repo
+  2. Open file in your terminal
+  3. Execute: ``python pro3-1.py``
+
+---
+
+#### Why not Heroku?
+
+I had problems connecting to heroku.com. After several days I have run into this recursive error:
+
+``
+at=error code=H14 desc="No web processes running" method=GET path="/" host=glacial-mesa-48481.herokuapp.com request_id=681cbb73-4404-4e42-babf-2e8aa970ba83 fwd="47.62.72.45" dyno= connect= service= status=503 bytes= protocol=https
+``
+
+Meanwhile tried on other alternative platforms, specifically on:
+1. railway.app
+2. cyclic.sh
+3. render.com
+4. deta.sh
+5. glitch.com
+6. Fly.io
+
+I have had different errors in each of them. I suspect it is due to the lack of web interface in my app and the use of .csv files. I'm still looking for a more efficient solution.
+
+The only and useful alternatives available have been:
+1. gitpod.io
+2. replit.com
+3. pythonanywhere.com
+
+..which have been exposed in the [Deploy Links!](#deploy) section
+
+---
+
 ### 👋End Note
 
 It has been a pleasure developing this project.
-I hope you enjoy learning Spanish!		
-				
-		
-		
-		
-		
-		
+I hope you enjoy learning Spanish!	
+
+
